@@ -22,6 +22,13 @@ Also, there is a brand filter if you only want to display specific REPSOL or CAM
 
 There is available a geospatial filter, you can select a bounding box like this: `date=20160309&filter=bbox&rectangle=-4.314,41.961,-3.048,42.819` to get only the gas station within that box, if you dont know the coordinates of the bounding box you can use the gear icon on the right side to set the current map view as the bounding rectangle.
 
+![legend](https://raw.githubusercontent.com/sigon426/app-preciocarburante/master/public/img/legend.png)
+
+* The data breaks of the dataset are calculated using  [Turf.js Jenks Natural breaks](http://turfjs.org/static/docs/module-turf_jenks.html)
+
+* The geospatial filter also use the fantastic [Turf.js](http://turfjs.org/) library
+
+* Some extra descriptive Statistics like the mode or median are calculated with the [Simplestatistics](http://simplestatistics.org/) library
 
 ## How to use the dataset Filters
 
@@ -53,7 +60,7 @@ http://app-preciocarburante.rhcloud.com/gasolina95
 
 http://app-preciocarburante.rhcloud.com/gasolina95?date=20160309&filter=not-this&admin=Provincia&list=PALMAS%20(LAS),SANTA%20CRUZ%20DE%20TENERIFE,MELILLA,CEUTA
 
-### Now let's check prices on the peninsula only for a specific brand (Repsol stations, but you could choose other liske CEPSA, GALP, SHELL, BP, etc.): 
+### Now let's check prices on the peninsula only for a specific brand (Repsol stations, but you could choose other like CEPSA, GALP, SHELL, BP, etc.): 
 
 http://app-preciocarburante.rhcloud.com/gasolina95?
 
