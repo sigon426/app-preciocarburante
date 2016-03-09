@@ -1,3 +1,7 @@
+
+.. image:: https://img.shields.io/badge/License-GNU-blue.svg
+    :target: https://github.com/sigon426/app-preciocarburante/blob/master/LICENSE
+    
 # Precio Carburante
 
 
@@ -11,7 +15,7 @@ http://app-preciocarburante.rhcloud.com/diesel
 
 ## Dataset Filters
 
-### If we want to compare the prices of gasoloina 95 on specific provinces on 01 march 2016, let's use the filter:
+### If we want to compare the prices of gasolina 95 on specific provinces on 01 march 2016, let's use the filter:
 
 http://app-preciocarburante.rhcloud.com/gasolina95?
 
