@@ -14,6 +14,8 @@ http://app-preciocarburante.rhcloud.com/gasolina98
 
 http://app-preciocarburante.rhcloud.com/diesel 
 
+![precio carburante](https://raw.githubusercontent.com/sigon426/app-preciocarburante/master/public/img/screenshot_bbox.png)
+
 Data can be filter by 'date' (Ej: `date=20160301`), by administrative division selecting only specific provinces or municipalities (Ej: `filter=only-this&admin=Provincia&list=barcelona`, or `filter=not-this&admin=Provincia&list=barcelona`). 
 
 Also, there is a brand filter if you only want to display specific REPSOL or CAMPSA stations (Ej: `filter=only-this&admin=Provincia&list=barcelona&rotulo=CAMPSA`).
@@ -67,7 +69,9 @@ http://app-preciocarburante.rhcloud.com/gasolina95?
 
 http://app-preciocarburante.rhcloud.com/gasolina95?date=20160309&filter=not-this&admin=Provincia&list=PALMAS%20(LAS),SANTA%20CRUZ%20DE%20TENERIFE,MELILLA,CEUTA:,BALEARS%20(ILLES),%20&rotulo=REPSOL
 
-### There is also a bounding box filter (bounding box coordinates in the form: [xLow, yLow, xHigh, yHigh]), we could also filter by brand (rotulo)
+### Using a geospatial filter (bounding box coordinates in the form: [xLow, yLow, xHigh, yHigh]): 
+
+With this we could also filter by brand (rotulo)
 
 http://app-preciocarburante.rhcloud.com/gasolina95
 
@@ -80,7 +84,6 @@ http://app-preciocarburante.rhcloud.com/gasolina95
     rotulo=CEPSA
 
 http://app-preciocarburante.rhcloud.com/gasolina95?date=20160309&filter=bbox&rectangle=-4.31488,41.96153,-3.048706,42.81958&rotulo=CEPSA
-
 
 
 ## Source
