@@ -14,15 +14,18 @@ http://app-preciocarburante.rhcloud.com/gasolina98
 
 http://app-preciocarburante.rhcloud.com/diesel 
 
-Data can be filter by 'date' (Ej: `date=20160301`), by administrative division ('Provincia' or 'Municipio') selecting only specific provinces or municipios (Ej: `filter=only-this&admin=Provincia&list=barcelona`, or `filter=not-this&admin=Provincia&list=barcelona`). Also there is a brand filter if you only want to display specific REPSOL or CAMPSA stations (Ej: `filter=only-this&admin=Provincia&list=barcelona&rotulo=CAMPSA`).
+Data can be filter by 'date' (Ej: `date=20160301`), by administrative division selecting only specific provinces or municipalities (Ej: `filter=only-this&admin=Provincia&list=barcelona`, or `filter=not-this&admin=Provincia&list=barcelona`). 
 
-There is also available a geospatial filter, you can select a bounding box like this: `date=20160309&filter=bbox&rectangle=-4.314,41.961,-3.048,42.819`, if you dont know the coordinates of the bounding box you can use the gear icon :cog: on the right side to set the current map view as the bounding rectangle.
+Also, there is a brand filter if you only want to display specific REPSOL or CAMPSA stations (Ej: `filter=only-this&admin=Provincia&list=barcelona&rotulo=CAMPSA`).
+
+There is available a geospatial filter, you can select a bounding box like this: `date=20160309&filter=bbox&rectangle=-4.314,41.961,-3.048,42.819` to get only the gas station within that box, if you dont know the coordinates of the bounding box you can use the gear icon on the right side to set the current map view as the bounding rectangle.
+
 
 ## How to use the dataset Filters
 
-### If we want to compare the prices of gasolina 95 on 3 specific provinces on 01 march 2016, let's use the filter:
+### If we want to compare the prices of gasolina 95 on 3 specific provinces on the 01 march 2016, let's use the filter:
 
-http://app-preciocarburante.rhcloud.com/gasolina95?
+http://app-preciocarburante.rhcloud.com/gasolina95
 
     date=20160301
 
@@ -48,7 +51,7 @@ http://app-preciocarburante.rhcloud.com/gasolina95
 
 http://app-preciocarburante.rhcloud.com/gasolina95?date=20160309&filter=not-this&admin=Provincia&list=PALMAS%20(LAS),SANTA%20CRUZ%20DE%20TENERIFE,MELILLA,CEUTA
 
-### Now let's check prices on the peninsula only for a specific brand, Repsol stations: 
+### Now let's check prices on the peninsula only for a specific brand (Repsol stations, but you could choose other liske CEPSA, GALP, SHELL, BP, etc.): 
 
 http://app-preciocarburante.rhcloud.com/gasolina95?
 
