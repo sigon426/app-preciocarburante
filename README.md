@@ -16,19 +16,18 @@ http://app-preciocarburante.rhcloud.com/diesel
 
 ![precio carburante](https://raw.githubusercontent.com/sigon426/app-preciocarburante/master/public/img/screenshot_bbox.png)
 
-Data can be filter by 'date' (Ej: `date=20160301`), by administrative division selecting only specific provinces or municipalities (Ej: `filter=only-this&admin=Provincia&list=barcelona`, or `filter=not-this&admin=Provincia&list=barcelona`). 
+Data can be filter by 'date' (Ej: `date=20160301`), and by administrative division selecting only specific provinces or municipalities (Ej: `filter=only-this&admin=Provincia&list=barcelona`, or `filter=not-this&admin=Provincia&list=barcelona`). 
 
 Also, there is a brand filter if you only want to display specific REPSOL or CAMPSA stations (Ej: `filter=only-this&admin=Provincia&list=barcelona&rotulo=CAMPSA`).
 
 There is available a geospatial filter, you can select a bounding box like this: `date=20160309&filter=bbox&rectangle=-4.314,41.961,-3.048,42.819` to get only the gas station within that box, if you dont know the coordinates of the bounding box you can use the gear icon on the right side to set the current map view as the bounding rectangle.
 
+### Data classification
+
 ![legend](https://raw.githubusercontent.com/sigon426/app-preciocarburante/master/public/img/legend.png)
 
-* The data breaks of the dataset are calculated using  [Turf.js Jenks Natural breaks](http://turfjs.org/static/docs/module-turf_jenks.html)
+Data breaks are calculated using [Turf.js Jenks Natural breaks](http://turfjs.org/static/docs/module-turf_jenks.html)
 
-* The geospatial filter also use the fantastic [Turf.js](http://turfjs.org/) library
-
-* Some extra descriptive Statistics like the mode or median are calculated with the [Simplestatistics](http://simplestatistics.org/) library
 
 ## How to use the dataset Filters
 
@@ -93,9 +92,9 @@ http://app-preciocarburante.rhcloud.com/gasolina95
 http://app-preciocarburante.rhcloud.com/gasolina95?date=20160309&filter=bbox&rectangle=-4.31488,41.96153,-3.048706,42.81958&rotulo=CEPSA
 
 
-## Source
+## Other stuff
 
-Data taken from Ministerio de Industria, Energía y Turismo (http://geoportalgasolineras.es/)
+Data is taken from Ministerio de Industria, Energía y Turismo (http://geoportalgasolineras.es/)
 
 minetur.gob.es data conditions :
 
@@ -104,6 +103,10 @@ https://sede.minetur.gob.es/en-US/datosabiertos/Paginas/modalidades-reutilizacio
 
 Spanish
 https://sede.minetur.gob.es/es-ES/Paginas/aviso.aspx#Reutilizacion
+
+The geospatial filter use the fantastic [Turf.js](http://turfjs.org/) library
+
+Some extra 'descriptive statistics' like the mode or median are calculated with the [Simplestatistics](http://simplestatistics.org/) library
 
 ## License
 
