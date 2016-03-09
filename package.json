@@ -1,0 +1,36 @@
+{
+  "name": "gasolineras",
+  "version": "1.0.0",
+  "description": "Precio carburantes en España",
+  "keywords": [
+    "Gasolina",
+    "Node.js",
+    "carburantes"
+  ],
+  "author": {
+    "name": "sigon",
+    "url": "https://github.com/sigon426"
+  },
+  "homepage": "http://app-preciocarburante.rhcloud.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openshift/origin-server"
+  },
+
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+
+  "dependencies": {
+    "express": "^3.4.4",
+    "jade": "^1.11.0",
+    "request": "^2.69.0",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+
+  "private": true,
+  "main": "server.js"
+}

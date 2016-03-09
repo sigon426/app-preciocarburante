@@ -1,0 +1,133 @@
+body, html { margin:0; padding:0; height:100%;}
+body { font-family:sans-serif; }
+body * { font-weight:200;}
+h1 { 
+    position:absolute; background:white; padding:10px;
+}
+#map { 
+    height:100%; 
+}
+/**/
+
+#updated {
+    /* -webkit-animation: typing 4s steps(60, end);
+    animation: typing 4s steps(60, end);*/
+    -webkit-animation: typing 4s infinite;
+    animation: typing 4s infinite;
+    font-family: "Courier";
+    font-size: 20px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 52em;
+}
+@media (max-width: 980px) {
+    #updated  {
+        width: 30em;
+    }
+}
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+}
+
+@-webkit-keyframes typing {
+    from { width: 0; } 
+    /*from { width: 100% }
+    to { width:0 }*/
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@-moz-keyframes typing {
+    from { width: 0; } 
+    /*from { width: 100% }
+    to { width:0 }*/
+}
+
+@-moz-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+.lateralMenu{
+    position: absolute;
+    top: 15%;
+    right: 5px;
+    width: 34px;
+    padding-right: 13px;
+    cursor: pointer;
+}
+
+h1 span {
+    position:absolute;
+    top:0;
+    right:0;
+    width:0;
+    background: white; /* same as background */
+    border-left: .1em solid black;
+    
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    -webkit-animation: typing 17s steps(30, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+    -moz-animation: typing 17s steps(30, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+} 
+/**/
+.leaflet-container {
+    background: rgba(0,0,0,.8) !important;
+}
+.fill-gray, .fill-grey {
+    background: rgba(34, 35, 39, 0.88);
+    color: #555;
+}
+.pin-top {
+    top: 0;right: 0;left: 0;position: absolute;
+}
+.pad1 {
+    padding: 10px 10px 10px 50px;
+}
+
+.legend {
+    line-height: 18px;
+    color: #555;
+    padding:15px;
+    background: rgba(34, 35, 39, 0.88);
+    margin-bottom: 45px !important;
+}
+.legend i {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+.copyright{
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    margin: auto;
+    width: 100%;
+}
+.copyright a {
+    color: #3887BE;
+    text-decoration: none;
+}
+.popupHeader{
+    margin-bottom: -2px;
+    font-weight: bold;
+}

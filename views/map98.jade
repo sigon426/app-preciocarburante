@@ -1,0 +1,42 @@
+doctype html
+html(lang="en")
+	head
+		title= title
+		script(src="/js/lib/leaflet/v0.7.7/leaflet.js")
+		script(src="/js/lib/awesome-markers/leaflet.awesome-markers.min.js")
+		script(src="/js/lib/lodash.js")
+		script(src="/js/lib/jquery-2.1.0.min.js")
+		script(src="/js/lib/turf/v2.0.0/turf.min.js")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+
+		link(rel='stylesheet', href='/css/leaflet/v0.7.7/leaflet.css')
+		link(rel='stylesheet', href='/css/ionicons/v1.5.2/ionicons.min.css')
+		link(rel='stylesheet', href='/css/awesome-markers/leaflet.awesome-markers.css')
+		link(rel='stylesheet', href='/css/style.css')
+
+
+	body
+		
+		div#map
+
+		div.pin-top.fill-gray.pad1
+			p#updated Precio actualizado el ...
+		div.lateralMenu
+			span.fa-stack.fa-lg
+				i.fa.fa-square-o.fa-stack-2x
+				i(title='Recalcula precio máximo y mínimo basandose en las estaciones que se muestran ahora en el mapa').fa.fa-cog.fa-stack-1x
+			
+			a#twitter(title='Compártelo en twitter')
+				span.fa-stack.fa-lg
+					i.fa.fa-square-o.fa-stack-2x
+					i.fa.fa-twitter.fa-stack-1x
+					
+		include ./includes/footer.jade
+		
+		script(src="/js/lib/leaflet-hash/v0.2.1/leaflet-hash.js")
+		script(src="/js/precioCarburante.js")
+		script(src="/js/textAnimation.js")
+		script(src="/js/load.js")
+		script(src="/js/share-ui.js")
+		script(src="/js/lib/simple_statistics.min.js")
+
