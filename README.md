@@ -6,7 +6,7 @@
 # Precio Carburante
 
 
-Petrol prices in Spain, updated daily.
+Petrol prices in Spain, updated daily  :clock8:
 
 http://app-preciocarburante.rhcloud.com/gasolina95
 
@@ -14,9 +14,13 @@ http://app-preciocarburante.rhcloud.com/gasolina98
 
 http://app-preciocarburante.rhcloud.com/diesel 
 
-## Dataset Filters
+Data can be filter by 'date' (Ej: `date=20160301`), by administrative division ('Provincia' or 'Municipio') selecting only specific provinces or municipios (Ej: `filter=only-this&admin=Provincia&list=barcelona`, or `filter=not-this&admin=Provincia&list=barcelona`). Also there is a brand filter if you only want to display specific REPSOL or CAMPSA stations (Ej: `filter=only-this&admin=Provincia&list=barcelona&rotulo=CAMPSA`).
 
-### If we want to compare the prices of gasolina 95 on specific provinces on 01 march 2016, let's use the filter:
+There is also available a geospatial filter, you can select a bounding box like this: `date=20160309&filter=bbox&rectangle=-4.314,41.961,-3.048,42.819`, if you dont know the coordinates of the bounding box you can use the gear icon :cog: on the right side to set the current map view as the bounding rectangle.
+
+## How to use the dataset Filters
+
+### If we want to compare the prices of gasolina 95 on 3 specific provinces on 01 march 2016, let's use the filter:
 
 http://app-preciocarburante.rhcloud.com/gasolina95?
 
@@ -75,6 +79,7 @@ http://app-preciocarburante.rhcloud.com/gasolina95
 http://app-preciocarburante.rhcloud.com/gasolina95?date=20160309&filter=bbox&rectangle=-4.31488,41.96153,-3.048706,42.81958&rotulo=CEPSA
 
 
+
 ## Source
 
 Data taken from Ministerio de Industria, Energía y Turismo (http://geoportalgasolineras.es/)
@@ -86,3 +91,9 @@ https://sede.minetur.gob.es/en-US/datosabiertos/Paginas/modalidades-reutilizacio
 
 Spanish
 https://sede.minetur.gob.es/es-ES/Paginas/aviso.aspx#Reutilizacion
+
+## License
+
+Copyright 2016 Sigon
+
+Licensed under the GPLv3: http://www.gnu.org/licenses/gpl-3.0.html
