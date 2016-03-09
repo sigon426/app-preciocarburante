@@ -1,7 +1,15 @@
 
 .. image:: https://img.shields.io/badge/License-GNU-blue.svg
     :target: https://github.com/sigon426/app-preciocarburante/blob/master/LICENSE
-    
+
+
+[![License](https://img.shields.io/badge/License-GNU-blue.svg)](https://github.com/sigon426/app-preciocarburante/blob/master/LICENSE)
+ 
+ .. image:: https://img.shields.io/badge/License-GNU-blue.svg
+    :target: https://github.com/sigon426/app-preciocarburante/blob/master/LICENSE
+    :alt: License
+
+
 # Precio Carburante
 
 
